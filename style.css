@@ -1,11 +1,79 @@
 .job {
   border: 1px solid grey;
-  padding: 0 10px;
+  padding: 0 5px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
+.left-section,
+.mid-section {
+  width: 30%;
+}
+
+.mid-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  height: 50%;
+  margin: auto;
+}
+
+.mid-right-section{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 9px;
+
+
+}
+
+.right-section {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  margin: auto;
+  font-weight: 500;
+}
+
+h6 {
+  font-weight: 700;
+}
 .company,
 .position {
-  font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Courier New", Courier, monospace;
+}
+
+.location {
+  font-size: 9px;
+}
+
+.tag {
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+}
+
+.apply {
+  border-radius: 8px;
+  padding: 8px 25px;
+  background-color: coral;
+  color: white;
+  border: none;
+}
+
+.apply:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }

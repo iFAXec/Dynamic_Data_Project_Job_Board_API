@@ -20,11 +20,15 @@ xhttp.onreadystatechange = function () {
             ${item.tags.map(tag =>
                 `<span class='tag'>${tag}</span>`
             ).join(' ')}
-
-        <div class='right-section'>
-            <button class = 'apply'>Apply</button>
         </div>
 
+        <div class = 'mid-right-section'>
+        ${new Date(item.date).toLocaleString()}
+        </div>
+
+        <div class='right-section'>
+        <a href = '${item.url}' target = '_blank'>
+            <button class = 'apply'>Apply</button>
         </div>
         `
             jobs.appendChild(div);
